@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161515"
+    tools:context=".MainActivity"
+    >
+
+        <ImageView
+            android:id="@+id/romantich"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/romantic" />
+
+        <ImageView
+            android:id="@+id/comedyh"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/romantich"
+            android:src="@drawable/comedy" />
+
+        <ImageView
+            android:id="@+id/thrillerh"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/romantich"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/horror" />
+
+        <ImageView
+            android:id="@+id/actionh"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="194dp"
+            android:layout_toRightOf="@+id/thrillerh"
+            android:src="@drawable/action" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1004938905667780/7558390584"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+

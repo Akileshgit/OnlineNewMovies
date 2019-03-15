@@ -1,0 +1,95 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161515"
+    tools:context=".EnglishActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/police"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/romantic"
+            android:src="@drawable/police" />
+
+        <ImageView
+            android:id="@+id/drug"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_toRightOf="@+id/police"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/drug" />
+
+        <ImageView
+            android:id="@+id/predator"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/police"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/predator" />
+
+        <ImageView
+            android:id="@+id/bermuda"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/drug"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/predator"
+            android:src="@drawable/bermuda" />
+
+
+        <ImageView
+            android:id="@+id/jetli"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/predator"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/jetli" />
+
+
+        <ImageView
+            android:id="@+id/rust"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/bermuda"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/jetli"
+            android:src="@drawable/rust" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="31dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1004938905667780/7558390584"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+</RelativeLayout>
